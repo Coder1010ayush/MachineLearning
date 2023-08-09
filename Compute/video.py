@@ -13,7 +13,7 @@ while True:
     if k == ord("q"):
         break;
 
-#release all resources when program is terminated
-cv2.release()
+# release all resources (memory) when program is terminate
+video.release()
 cv2.destroyAllWindows()
     

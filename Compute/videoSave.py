@@ -9,7 +9,7 @@ print(video)
 # 0 shows the primary camera of laptop
 while video.isOpened():
     ret,frame = video.read()
-    if ret == True:
+    if ret:
         frame = cv2.resize(frame,(500,500))
         cv2.imshow("frame", frame)
         output.write(frame)
